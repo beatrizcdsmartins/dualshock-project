@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <title>PS5 Dualshock</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <header class="nav">
+
+            <img class="logo" src="./assets/logo.png" alt="logo-image">  
+
+            <nav>
+                <ul id="menu-list">
+                    <li class="li-menu"><a class="links" href="">consoles</a></li>
+                    <li class="li-menu"><a class="links" href="">acessórios</a></li>
+                    <li class="li-menu"><a class="links" href="">controles</a></li>
+                    <li class="li-menu"><a class="links" href="">outros</a></li>
+                </ul>
+            </nav>
+            <img src="./assets/menu.png" class="barras"alt="" onclick="showMenu()">
+
+        </header>
+
+        <main>
+
+            <div class="container-left">
+                <h1>PS5 DUALSHOCK</h1>
+                <h2>Wireles contoller for Play Station</h2>
+                <p>controle original</p>
+                <h4>222,50</h4>
+                <button class="buy-now">Comprar Agora <img src="./assets/arrow.png" alt=""></button>
+            </div>
+
+            
+
+            <div class="container-right">
+                <img class="controller" src="./assets/controller.png" alt="controller-image">
+                <div class="box"></div>
+                <button class="add">
+                    <img src="./assets/add.png" alt="add-button">
+                </button>
+            </div>
+        </main>
+
+        <footer class="social-net">
+            <a><img class="social-links" src="./assets/fb.png" alt="face"></a>
+            <a href=""><img class="social-links" src="./assets/ig.png" alt="insta"></a>
+            <a href=""><img class="social-links" src="./assets/tw.png" alt="twitter"></a>
+            
+        </footer>
+
+    </div>
+    
+</body>
+
+    <script>
+        const menuList = document.getElementById("menu-list")
+        menuList.style.maxHeight = "0px" //quando a aplicação começar, ele não vai aparecer 
+
+        function showMenu(){
+            if (menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "120px"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+
+
+        }
+
+    </script>
+</html>
